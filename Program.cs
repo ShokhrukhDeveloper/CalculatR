@@ -2,7 +2,6 @@
 startProgram:
     Console.WriteLine();
     Console.WriteLine("------------HOME------------------");
-
     Console.WriteLine("1-> Geometry Guru:");
     Console.WriteLine("2-> Simple Calculator");
     Console.WriteLine("0-> exit");
@@ -56,7 +55,7 @@ startProgram:
     {
         simpleCalculatorStart:
             Console.WriteLine();
-            Console.WriteLine("------HOME-=>-Simple-Calculator-----------------");
+            Console.WriteLine("-------Simple-Calculator-----------------");
             Console.WriteLine("1-> Arithmetic practice +, -, *, /, ^ ");
             Console.WriteLine("2-> Quadratic equation");
             Console.WriteLine("0-> Back <==");
@@ -116,7 +115,7 @@ startProgram:
                 '^'=>(int)Math.Pow(number1,number2),
             };
             Console.WriteLine(userInputExpression+$"={result}");
-        goto startProgram;
+        goto simpleCalculatorStart;
     }
     
     else if(userInputCalculator=="2")
