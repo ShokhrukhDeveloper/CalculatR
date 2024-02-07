@@ -1,7 +1,8 @@
 ﻿
 startProgram:
     Console.WriteLine();
-    Console.WriteLine("----------------------------------------");
+    Console.WriteLine("------------HOME------------------");
+
     Console.WriteLine("1-> Geometry Guru:");
     Console.WriteLine("2-> Simple Calculator");
     Console.WriteLine("0-> exit");
@@ -10,13 +11,15 @@ startProgram:
     {
         geometryStart:
         Console.WriteLine();
-        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("-----HOME-=>-GeometryGuru-----------");
         Console.WriteLine("1-> Find the volume of the cylinder");
         Console.WriteLine("2-> Calculation of the surface area of a circle");
-        Console.WriteLine("0-> exit");
+        Console.WriteLine("0-> Back <==");
         string userInputGeometry=Console.ReadLine()!;
         if (userInputGeometry=="1")
         {
+            Console.Clear();
+            Console.WriteLine("-HOME- => -GeometryGuru- => ___ Find-the-volume-of-the-cylinder ___--------");
             Console.WriteLine("V =(1/3)*Pi*h*R^2");
             Console.WriteLine("R = ");
             int radius=Convert.ToInt32(Console.ReadLine());
@@ -28,6 +31,8 @@ startProgram:
         }
         else if (userInputGeometry=="2")
         {
+            Console.Clear();
+            Console.WriteLine("-HOME- => -GeometryGuru- => ___ Calculation-of-the-surface-area-of-a-circle ___---");
             Console.WriteLine("S = Pi*R^2");
             Console.WriteLine("R=");
             int radius=Convert.ToInt32(Console.ReadLine());
@@ -51,15 +56,16 @@ startProgram:
     {
         simpleCalculatorStart:
             Console.WriteLine();
-            Console.WriteLine("----------------------------------------");
-            Console.WriteLine("1. +, -, *, / ");
+            Console.WriteLine("------HOME-=>-Simple-Calculator-----------------");
+            Console.WriteLine("1-> Arithmetic practice +, -, *, /, ^ ");
             Console.WriteLine("2-> Quadratic equation");
-            Console.WriteLine("0-> Back");
+            Console.WriteLine("0-> Back <==");
             string userInputCalculator=Console.ReadLine()!;
               
     if (userInputCalculator=="1")
     {
         Console.Clear();
+        Console.WriteLine("------HOME-=>-Simple-Calculator-=>-Arithmetic-practice---------------");
         Console.WriteLine("Enter arthimetic expression");
         string userInputExpression = Console.ReadLine()!;
         int signIndex=0;
@@ -116,6 +122,7 @@ startProgram:
     else if(userInputCalculator=="2")
     {
         Console.Clear();
+        Console.WriteLine("------HOME-=>-Simple-Calculator-=>-Quadratic-equation---------------");
         Console.WriteLine("ax^2 + bx + c = 0");
         Console.WriteLine("a=");
         int a= Convert.ToInt32(Console.ReadLine());
