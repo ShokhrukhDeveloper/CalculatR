@@ -1,5 +1,7 @@
 ﻿
 startProgram:
+    Console.WriteLine();
+    Console.WriteLine("----------------------------------------");
     Console.WriteLine("1-> Geometry Guru:");
     Console.WriteLine("2-> Simple Calculator");
     Console.WriteLine("0-> exit");
@@ -7,6 +9,8 @@ startProgram:
     if (userInput=="1")
     {
         geometryStart:
+        Console.WriteLine();
+        Console.WriteLine("----------------------------------------");
         Console.WriteLine("1-> Find the volume of the cylinder");
         Console.WriteLine("2-> Calculation of the surface area of a circle");
         Console.WriteLine("0-> exit");
@@ -33,10 +37,12 @@ startProgram:
         }
         else if (userInputGeometry=="0")
         {
+            Console.Clear();
            goto startProgram; 
         }
         else
         {
+            Console.Clear();
             Console.WriteLine("Invalid input");
             goto geometryStart;
         }
@@ -44,13 +50,16 @@ startProgram:
     else if(userInput=="2")
     {
         simpleCalculatorStart:
-            Console.WriteLine("1. +, -, *, /, ^ Input: 2^2, Output: 4");
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("1. +, -, *, / ");
             Console.WriteLine("2-> Quadratic equation");
             Console.WriteLine("0-> Back");
             string userInputCalculator=Console.ReadLine()!;
               
     if (userInputCalculator=="1")
     {
+        Console.Clear();
         Console.WriteLine("Enter arthimetic expression");
         string userInputExpression = Console.ReadLine()!;
         int signIndex=0;
@@ -106,6 +115,7 @@ startProgram:
     
     else if(userInputCalculator=="2")
     {
+        Console.Clear();
         Console.WriteLine("ax^2 + bx + c = 0");
         Console.WriteLine("a=");
         int a= Convert.ToInt32(Console.ReadLine());
@@ -136,12 +146,14 @@ startProgram:
     
     else if (userInputCalculator=="0")
     {
+      Console.Clear();
       goto startProgram;  
     }
     }
     else if (userInput=="0")
     {
-      goto endProgram;  
+        Console.Clear();
+        goto endProgram;  
     }
     else
     {
