@@ -2,7 +2,7 @@
 startProgram:
     Console.WriteLine();
     Console.WriteLine("------------HOME------------------");
-    Console.WriteLine("1-> Geometry Guru:");
+    Console.WriteLine("1-> Geometry Guru");
     Console.WriteLine("2-> Simple Calculator");
     Console.WriteLine("0-> exit");
     string userInput=Console.ReadLine()!;
