@@ -1,7 +1,12 @@
 # Calculator
 ## New modern app development calculator you can use this 
-    1.  Geomery Guru
-    2.  Simple calculator
+###     _1.  Geomery Guru_
+####        ->1. Find the volume of the cylinder
+####        ->2. Calculation of the surface area of a circle
+###    _2.  Simple calculator_
+####        -->1. Arithmetic practice
+####        -->2. Quadratic equation
+----------------------------------------------------------
 There are two type of program
  you can choose 1.  Geomery Guru
 ### this project to get started C#
